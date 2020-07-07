@@ -2,7 +2,6 @@
     "name": "mr-muminov/yii2-charts",
     "description": "Yii2 Framework Charts Extension",
     "type": "extension",
-    "license": "Apache License",
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
