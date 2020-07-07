@@ -6,11 +6,11 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
-        "bower-asset/Chart.js": "*"
+        "bower-asset/chartjs": "*"
     },
     "autoload": {
         "psr-4": {
-            "phpnt\\chartJS\\": ""
+            "mrmuminov\\charts\\": ""
         }
     }
 }
