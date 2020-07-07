@@ -3,6 +3,8 @@
     "description": "Yii2 Framework Charts Extension",
     "type": "extension",
     "license": "MIT",
+    "minimum-stability" : "dev",
+    "prefer-stable": true,
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "*",
