@@ -38,14 +38,14 @@ class Charts extends Widget
         $view = $this->getView();
         ChartsAsset::register($view);
 
-        $js = <<< JS
-            var ctx = $("#$this->id");
-            var myChart = new Chart(ctx, {
-                type: '$this->type',
-                data: $this->data,
-                options: $this->options
+        $js = "
+            let ctx = $("#$this->id");
+            let myChart = new Chart(ctx, {
+                type: '".$this->type."',
+                data: ".$this->data.",
+                options: ".$this->options."
             });
-JS;
+        ";
         $view->registerJs($js);
     }
 }
