@@ -2,7 +2,7 @@
 
 namespace mrmuminov\charts;
 
-use yii\bootstrap\Widget;
+use yii\base\Widget;
 use yii\helpers\Json;
 
 class Charts extends Widget
@@ -16,7 +16,7 @@ class Charts extends Widget
     const TYPE_BUBBLE           = 'bubble';
 
     public $type;
-    public $variable            = "myChart";
+    public $variable            = "mrChart";
     public $data                = [];
     public $options             = [];
 
