@@ -16,6 +16,7 @@ class Charts extends Widget
     const TYPE_BUBBLE           = 'bubble';
 
     public $type;
+    public $variable            = "myChart";
     public $data                = [];
     public $options             = [];
 
@@ -39,8 +40,8 @@ class Charts extends Widget
         ChartsAsset::register($view);
 
         $js = "
-            let ctx = $("#$this->id");
-            let myChart = new Chart(ctx, {
+            let ctx = $('#$this->id');
+            let ".$this->variable." = new Chart(ctx, {
                 type: '".$this->type."',
                 data: ".$this->data.",
                 options: ".$this->options."
